@@ -40,7 +40,7 @@ will discover it from Python interpreter.
 
 This is a regular python module, where you shall define function
 main(*args). All arguments passed from Zabbix to an agent, will be
-passed to a main() functions as srings. The return value will be returned
+passed to a main() functions as strings. The return value will be returned
 to Zabbix. Only Int, Long, Float and String information types are supported as return values.
 
 ## "Special" Zabbix modules
