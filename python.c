@@ -78,6 +78,7 @@ void load_python_env_config(void)  {
 	{ NULL },
      };
    zbx_snprintf(conf_file, BUFSIZE, "%s/python.cfg", CONFIG_LOAD_MODULE_PATH);
+   /* Should come some error catching, if returned FAIL then report this. Now is just fails */
    parse_cfg_file(conf_file, cfg, ZBX_CFG_FILE_OPTIONAL, ZBX_CFG_STRICT);
    /* printf("%s %s %s\n", conf_file, lib_path, python_path); */
 }
